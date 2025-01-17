@@ -1,15 +1,12 @@
 ## Prerequisites
 - [Node.js](https://nodejs.org/) (v14+)
-- [FFmpeg](https://ffmpeg.org/download.html) installed and accessible in PATH
 - OpenAI API Key ([get it here](https://platform.openai.com/))
-- Microphone and speaker setup
-- Macbook (This is my local machine. I'm not sure if it works fine on Windows)
 
 ## To run the program on your local machine
 1. Clone the repository:
    ```bash
-   git clone https://github.com/leslie0605/interview-platform-backend.git
-   cd interview-platform-backend
+   git clone https://github.com/leslie0605/mock-interview-platform.git
+   cd mock-interview-platform
    ```
 2. Install dependencies:
    ```bash
@@ -19,8 +16,14 @@
    ```bash
    OPENAI_API_KEY=your_openai_api_key_here
    ```
-4. Upload your own resume to root folder and name it as "resume.pdf".
-5. Start the app:
+4. Start the backend:
    ```bash
-   node ttsChat.js 
+   node server.js 
+   ```
+5. Run the frontend:
+      ```bash
+   git clone https://github.com/leslie0605/mock-interview-platform-frontend.git
+   cd mock-interview-platform-frontend
+   npm install
+   npm start
    ```
