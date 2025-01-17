@@ -27,3 +27,7 @@
    npm install
    npm start
    ```
+## How to use the mock interview platform?
+
+1. Provide your resume and role details: Start by uploading your resume in PDF format through the provided form on the homepage. Fill in the company name, role name, job description.
+2. Begin the Interview: Once you click the "Submit" button, you will be directed to the interview screen. Click the "Start Answering" button to begin the mock interview.
