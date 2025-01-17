@@ -252,7 +252,8 @@ Today there is a candidate interviewing for the position ${roleName}.
 Here is the job description: ${jobDescription}.
 The candidate's resume is as follows: ${resumeText}.
 Please ask relevant interview questions based on the resume and the candidate's responses.
-Ask questions one by one like a real interview. Start with a general question like "Tell me about yourself".`,
+Ask questions one by one like a real interview. 
+Please start with a general question like "Tell me about yourself".`,
       },
       ...chatHistory,
       { role: "user", content: transcribedText },
@@ -275,7 +276,7 @@ Ask questions one by one like a real interview. Start with a general question li
 
     // Convert the chat response to speech and play + log it to the terminal
     await streamedAudio(chatResponseText);
-    console.log(`>> Assistant said: ${chatResponseText}`);
+    console.log(`>> Interviewer said: ${chatResponseText}`);
 
     // Reset microphone stream and prompt for new recording
     micStream = null;
